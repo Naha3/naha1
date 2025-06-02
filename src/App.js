@@ -1,16 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MultiMediaDashboard from "./components/MultiMediaDashboard";
+import "./App.css";
+
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to React</h1>
-      <p>Learn with naha</p>
-      <b>Learn with naha</b>
-      <h1>Welcome to React</h1>
-      <p>Learn with naha</p>
-      <b>Learn with naha</b>
-      <h1>Welcome to React</h1>
-      <p>Learn with naha</p>
-      <b>Learn with naha</b>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<MultiMediaDashboard />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
